@@ -2,8 +2,10 @@
 #include<queue>
 #include<map>
 #include<climits>
-#include "graph.cpp"
+#include<bits/stdc++.h>
+#include<cfloat>
 using namespace std;
+#include "graph.cpp"
 
 
 int main()
@@ -60,10 +62,27 @@ int main()
             cin>>source>>destination;
             vector<string> ans;
             g.path(source,destination,ans);
+            reverse(ans.begin(),ans.end());
             for(int i=0;i<ans.size();i++)
             {
                 cout<<ans[i]<<" ";
             }
+        }
+        if(choice==6)
+        {
+            string source,destination;
+            cin>>source>>destination;
+            vector<string> ans;
+            g.path2(source,destination,ans);
+            reverse(ans.begin(),ans.end());
+            for(int i=0;i<ans.size();i++)
+            {
+                cout<<ans[i]<<" ";
+            }
+        }
+        if(choice==7)
+        {
+            return 0;
         }
     }
 }

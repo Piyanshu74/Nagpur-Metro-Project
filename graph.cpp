@@ -30,7 +30,7 @@ class Graph
             vector<float> k;
             for(int i=0;i<35;i++)
             {
-                k.push_back(0);
+                k.push_back(0.0);
             }
             d.push_back(k);
             t.push_back(k);
@@ -44,8 +44,8 @@ class Graph
         t[m["Lokmanya_Nagar"]-1][m["Bansi_Nagar"]-1]=1.2;
         t[m["Bansi_Nagar"]-1][m["Lokmanya_Nagar"]-1]=1.2;
 
-        d[m["Bansi_Nagar"]-1][m["Vasudev_Nagar"]-1]=3;
-        d[m["Vasudev_Nagar"]-1][m["Bansi_Nagar"]-1]=3;
+        d[m["Bansi_Nagar"]-1][m["Vasudev_Nagar"]-1]=3.0;
+        d[m["Vasudev_Nagar"]-1][m["Bansi_Nagar"]-1]=3.0;
         t[m["Bansi_Nagar"]-1][m["Vasudev_Nagar"]-1]=2.4;
         t[m["Vasudev_Nagar"]-1][m["Bansi_Nagar"]-1]=2.4;
 
@@ -59,8 +59,8 @@ class Graph
         t[m["Rachana_Ring_Road_Junction"]-1][m["Subhash_Nagar"]-1]=1.2;
         t[m["Subhash_Nagar"]-1][m["Rachana_Ring_Road_Junction"]-1]=1.2;
         
-        d[m["Subhash_Nagar"]-1][m["Dharampeth_College"]-1]=4;
-        d[m["Dharampeth_College"]-1][m["Subhash_Nagar"]-1]=4;
+        d[m["Subhash_Nagar"]-1][m["Dharampeth_College"]-1]=4.0;
+        d[m["Dharampeth_College"]-1][m["Subhash_Nagar"]-1]=4.0;
         t[m["Subhash_Nagar"]-1][m["Dharampeth_College"]-1]=3.2;
         t[m["Dharampeth_College"]-1][m["Subhash_Nagar"]-1]=3.2;
         
@@ -91,8 +91,8 @@ class Graph
         t[m["Sitabuldi"]-1][m["Jhansi_Rani_Square"]-1]=0.6;
 
         
-        d[m["Sitabuldi"]-1][m["Nagpur_Railway_Station"]-1]=2;
-        d[m["Nagpur_Railway_Station"]-1][m["Sitabuldi"]-1]=2;
+        d[m["Sitabuldi"]-1][m["Nagpur_Railway_Station"]-1]=2.0;
+        d[m["Nagpur_Railway_Station"]-1][m["Sitabuldi"]-1]=2.0;
         t[m["Sitabuldi"]-1][m["Nagpur_Railway_Station"]-1]=1.6;
         t[m["Nagpur_Railway_Station"]-1][m["Sitabuldi"]-1]=1.6;
 
@@ -127,8 +127,8 @@ class Graph
         t[m["Vaishnodevi_Square"]-1][m["Prajapati_Nagar"]-1]=1.2;
         t[m["Prajapati_Nagar"]-1][m["Vaishnodevi_Square"]-1]=1.2;
 
-        d[m["Khapri"]-1][m["New_Airport"]-1]=3;
-        d[m["New_Airport"]-1][m["Khapri"]-1]=3;
+        d[m["Khapri"]-1][m["New_Airport"]-1]=3.0;
+        d[m["New_Airport"]-1][m["Khapri"]-1]=3.0;
         t[m["Khapri"]-1][m["New_Airport"]-1]=2.4;
         t[m["New_Airport"]-1][m["Khapri"]-1]=2.4;       
         
@@ -137,8 +137,8 @@ class Graph
         t[m["New_Airport"]-1][m["Airport_South"]-1]=1.2;
         t[m["Airport_South"]-1][m["New_Airport"]-1]=1.2;
         
-        d[m["Airport_South"]-1][m["Airport"]-1]=1;
-        d[m["Airport"]-1][m["Airport_South"]-1]=1;
+        d[m["Airport_South"]-1][m["Airport"]-1]=1.0;
+        d[m["Airport"]-1][m["Airport_South"]-1]=1.0;
         t[m["Airport_South"]-1][m["Airport"]-1]=0.8;
         t[m["Airport"]-1][m["Airport_South"]-1]=0.8;
         
@@ -147,13 +147,13 @@ class Graph
         t[m["Airport"]-1][m["Ujjwal_Nagar"]-1]=1.2;
         t[m["Ujjwal_Nagar"]-1][m["Airport"]-1]=1.2;
         
-        d[m["Ujjwal_Nagar"]-1][m["Jaiprakash_Nagar"]-1]=1;
-        d[m["Jaiprakash_Nagar"]-1][m["Ujjwal_Nagar"]-1]=1;
+        d[m["Ujjwal_Nagar"]-1][m["Jaiprakash_Nagar"]-1]=1.0;
+        d[m["Jaiprakash_Nagar"]-1][m["Ujjwal_Nagar"]-1]=1.0;
         t[m["Ujjwal_Nagar"]-1][m["Jaiprakash_Nagar"]-1]=0.8;
         t[m["Jaiprakash_Nagar"]-1][m["Ujjwal_Nagar"]-1]=0.8;
         
-        d[m["Jaiprakash_Nagar"]-1][m["Chhatrapati_Square"]-1]=1;
-        d[m["Chhatrapati_Square"]-1][m["Jaiprakash_Nagar"]-1]=1;
+        d[m["Jaiprakash_Nagar"]-1][m["Chhatrapati_Square"]-1]=1.0;
+        d[m["Chhatrapati_Square"]-1][m["Jaiprakash_Nagar"]-1]=1.0;
         t[m["Jaiprakash_Nagar"]-1][m["Chhatrapati_Square"]-1]=0.8;
         t[m["Chhatrapati_Square"]-1][m["Jaiprakash_Nagar"]-1]=0.8;
         
@@ -162,8 +162,8 @@ class Graph
         t[m["Chhatrapati_Square"]-1][m["Ajni_Square"]-1]=1.44;
         t[m["Ajni_Square"]-1][m["Chhatrapati_Square"]-1]=1.44;
         
-        d[m["Ajni_Square"]-1][m["Rahate_Colony"]-1]=1;
-        d[m["Rahate_Colony"]-1][m["Ajni_Square"]-1]=1;
+        d[m["Ajni_Square"]-1][m["Rahate_Colony"]-1]=1.0;
+        d[m["Rahate_Colony"]-1][m["Ajni_Square"]-1]=1.0;
         t[m["Ajni_Square"]-1][m["Rahate_Colony"]-1]=0.8;
         t[m["Rahate_Colony"]-1][m["Ajni_Square"]-1]=0.8;
         
@@ -172,13 +172,13 @@ class Graph
         t[m["Rahate_Colony"]-1][m["Congress_Nagar"]-1]=0.64;
         t[m["Congress_Nagar"]-1][m["Rahate_Colony"]-1]=0.64;
       
-        d[m["Congress_Nagar"]-1][m["Sitabuldi"]-1]=3;
-        d[m["Sitabuldi"]-1][m["Congress_Nagar"]-1]=3;
+        d[m["Congress_Nagar"]-1][m["Sitabuldi"]-1]=3.0;
+        d[m["Sitabuldi"]-1][m["Congress_Nagar"]-1]=3.0;
         t[m["Congress_Nagar"]-1][m["Sitabuldi"]-1]=2.4;
         t[m["Sitabuldi"]-1][m["Congress_Nagar"]-1]=2.4;
 
-        d[m["Sitabuldi"]-1][m["Zero_Mile"]-1]=1;
-        d[m["Zero_Mile"]-1][m["Sitabuldi"]-1]=1;
+        d[m["Sitabuldi"]-1][m["Zero_Mile"]-1]=1.0;
+        d[m["Zero_Mile"]-1][m["Sitabuldi"]-1]=1.0;
         t[m["Sitabuldi"]-1][m["Zero_Mile"]-1]=0.8;
         t[m["Zero_Mile"]-1][m["Sitabuldi"]-1]=0.8;
         
@@ -192,8 +192,8 @@ class Graph
         t[m["Kasturchand_Park"]-1][m["Gaddi_Godam_Square"]-1]=1.2;
         t[m["Gaddi_Godam_Square"]-1][m["Kasturchand_Park"]-1]=1.2;
         
-        d[m["Gaddi_Godam_Square"]-1][m["Kadvi_Square"]-1]=2;
-        d[m["Kadvi_Square"]-1][m["Gaddi_Godam_Square"]-1]=2;
+        d[m["Gaddi_Godam_Square"]-1][m["Kadvi_Square"]-1]=2.0;
+        d[m["Kadvi_Square"]-1][m["Gaddi_Godam_Square"]-1]=2.0;
         t[m["Gaddi_Godam_Square"]-1][m["Kadvi_Square"]-1]=1.6;
         t[m["Kadvi_Square"]-1][m["Gaddi_Godam_Square"]-1]=1.6;
         
@@ -355,33 +355,20 @@ class Graph
         return;
     }
 
-    int mindis(vector<bool> visited,vector<float> distance)
-    {
-        int mini=-1;
-        for(int i=0;i<35;i++)
-        {
-            if(!visited[i] && (mini==-1||distance[i]<distance[mini]))
-            {
-                mini=i;
-            }
-        }
-        return mini;
-    }
-
     float dis(string source,string destination)
     {
         int s=m[source]-1;
         int e=m[destination]-1;
         vector<bool> visited;
         vector<float> distance;
-        priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
+        priority_queue< pair<float,float>, vector<pair<float,float>>, greater<pair<float,float>> > pq;
         for(int i=0;i<35;i++)
         {
             visited.push_back(false);
-            distance.push_back(INT_MAX);
+            distance.push_back(FLT_MAX);
         }
-        distance[s]=0;
-        pq.push(make_pair(0,s));
+        distance[s]=0.0;
+        pq.push(make_pair(0.0,s));
         while(!pq.empty())
         {
             int mini=pq.top().second;
@@ -389,7 +376,7 @@ class Graph
             visited[mini]=true;
             for(int j=0;j<35;j++)
             {
-                if(d[mini][j]!=0 && !visited[j])
+                if(d[mini][j]!=0.0 && !visited[j])
                 {
                     distance[j]=min(distance[j],distance[mini] +d[mini][j]);
                     pq.push(make_pair(distance[j],j));
@@ -399,33 +386,20 @@ class Graph
         return distance[e];
     }
 
-    int mint(vector<bool> visited,vector<float> tim)
-    {
-        int mini=-1;
-        for(int i=0;i<35;i++)
-        {
-            if(!visited[i] && (mini==-1||tim[i]<tim[mini]))
-            {
-                mini=i;
-            }
-        }
-        return mini;
-    }
-
     float time(string source,string destination)
     {
         int s=m[source]-1;
         int e=m[destination]-1;
         vector<bool> visited;
         vector<float> tim;
-        priority_queue< pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>> > pq;
+        priority_queue< pair<float,float>, vector<pair<float,float>>, greater<pair<float,float>> > pq;
         for(int i=0;i<35;i++)
         {
             visited.push_back(false);
-            tim.push_back(INT_MAX);
+            tim.push_back(FLT_MAX);
         }
-        tim[s]=0;
-        pq.push(make_pair(0,s));
+        tim[s]=0.0;
+        pq.push(make_pair(0.0,s));
         while(!pq.empty())
         {
             int mini=pq.top().second;
@@ -433,7 +407,7 @@ class Graph
             visited[mini]=true;
             for(int j=0;j<35;j++)
             {
-                if(t[mini][j]!=0 && !visited[j])
+                if(t[mini][j]!=0.0 && !visited[j])
                 {
                     tim[j]=min(tim[j],tim[mini] +t[mini][j]);
                     pq.push(make_pair(tim[j],j));
@@ -445,32 +419,98 @@ class Graph
 
     void path(string source,string destination,vector<string>& ans)
     {
-        vector<bool> visited;
-        for(int i=0;i<35;i++)
-        {
-            visited.push_back(false);
-        }
+        unordered_map<int,int> mp;
+        bool pathfound=false;
         int s=m[source]-1;
         int e=m[destination]-1;
-        vector<float> distance(35,INT_MAX);
-        distance[s]=0;
-        for(int i=0;i<35;i++)
+        vector<bool> visited(35,false);
+        vector<float> distance(35,FLT_MAX);
+        priority_queue<pair<float,float>,vector<pair<float,float>>,greater<pair<float,float>>> pq;
+        distance[s]=0.0;
+        pq.push(make_pair(0.0,s));
+        while(!pq.empty() && !pathfound)
         {
-            int mini=mindis(visited,distance);
+            int mini=pq.top().second;
+            pq.pop();
             visited[mini]=true;
-            if(mini==e)
-            {
-                break;
-            }
             for(int j=0;j<35;j++)
             {
-                if(d[mini][j]!=0 && !visited[j])
+                if(d[mini][j]!=0.0 && !visited[j])
                 {
-                    distance[j]=min(distance[j],distance[mini] +d[mini][j]);
+                    if(distance[mini] + d[mini][j]<distance[j])
+                    {
+                        distance[j]=min(distance[j],distance[mini] + d[mini][j]);
+                        pq.push(make_pair(distance[j],j));
+                        mp[j]=mini;
+                    }
+                    if(j==e)
+                    {
+                        pathfound=true;
+                    }
                 }
             }
-        } 
-        return;            
+        }
+        if(!pathfound)
+        {
+            return;
+        }
+        ans.push_back(m2[e+1]);
+        int h=e;
+        while(h!=s)
+        {
+            int l=mp[h];
+            ans.push_back(m2[l+1]);
+            h=l;
+        }
+        return;
+    }
+
+    void path2(string source,string destination,vector<string>& ans)
+    {
+        unordered_map<int,int> mp;
+        bool pathfound=false;
+        int s=m[source]-1;
+        int e=m[destination]-1;
+        vector<bool> visited(35,false);
+        vector<float> tim(35,FLT_MAX);
+        priority_queue<pair<float,float>,vector<pair<float,float>>,greater<pair<float,float>>> pq;
+        tim[s]=0.0;
+        pq.push(make_pair(0.0,s));
+        while(!pq.empty() && !pathfound)
+        {
+            int mini=pq.top().second;
+            pq.pop();
+            visited[mini]=true;
+            for(int j=0;j<35;j++)
+            {
+                if(t[mini][j]!=0.0 && !visited[j])
+                {
+                    if(tim[mini] + d[mini][j]<tim[j])
+                    {
+                        tim[j]=min(tim[j],tim[mini] + d[mini][j]);
+                        pq.push(make_pair(tim[j],j));
+                        mp[j]=mini;
+                    }
+                    if(j==e)
+                    {
+                        pathfound=true;
+                    }
+                }
+            }
+        }
+        if(!pathfound)
+        {
+            return;
+        }
+        ans.push_back(m2[e+1]);
+        int h=e;
+        while(h!=s)
+        {
+            int l=mp[h];
+            ans.push_back(m2[l+1]);
+            h=l;
+        }
+        return;
     }
     
 };
